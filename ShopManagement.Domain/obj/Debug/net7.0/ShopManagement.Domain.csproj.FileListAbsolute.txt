@@ -1,0 +1,17 @@
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\ShopManagement.Domain.deps.json
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\ShopManagement.Domain.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\ShopManagement.Domain.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\0_Framework.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\ShopManagement.Application.Contracts.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\0_Framework.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\bin\Debug\net7.0\ShopManagement.Application.Contracts.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.AssemblyInfo.cs
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.csproj.CopyComplete
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\refint\ShopManagement.Domain.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ShopManagement.Domain.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Domain\obj\Debug\net7.0\ref\ShopManagement.Domain.dll

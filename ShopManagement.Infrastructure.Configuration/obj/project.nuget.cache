@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s/eLBPPkqESRA1CSh9N59C8dXpQreL5kynolq0WNY7/equI8HuLsks5ZxNr4CChqJYtYIwGSzWCVcSCgebic/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\ShopManagement.Infrastructure.Configuration\\ShopManagement.Infrastructure.Configuration.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amira\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
