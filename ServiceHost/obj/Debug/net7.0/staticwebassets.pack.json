@@ -1165,6 +1165,10 @@
       "PackagePath": "staticwebassets\\AdminTheme\\images\\logo_dark.png"
     },
     {
+      "Id": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\ServiceHost\\wwwroot\\AdminTheme\\images\\product.jpg",
+      "PackagePath": "staticwebassets\\AdminTheme\\images\\product.jpg"
+    },
+    {
       "Id": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\ServiceHost\\wwwroot\\AdminTheme\\images\\small\\Thumbs.db",
       "PackagePath": "staticwebassets\\AdminTheme\\images\\small\\Thumbs.db"
     },

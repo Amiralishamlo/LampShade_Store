@@ -12,7 +12,7 @@ namespace ShopManagement.Application.Contracts.ProductCategorys
 
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel seachModel);
 
-
+        List<ProductCategoryViewModel> GetProductCategorys();
 
     }
 }
