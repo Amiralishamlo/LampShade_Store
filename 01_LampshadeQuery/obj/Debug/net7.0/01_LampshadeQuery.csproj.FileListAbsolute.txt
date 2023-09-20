@@ -1,0 +1,11 @@
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\bin\Debug\net7.0\01_LampshadeQuery.deps.json
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\bin\Debug\net7.0\01_LampshadeQuery.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\bin\Debug\net7.0\01_LampshadeQuery.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\01_LampshadeQuery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\01_LampshadeQuery.AssemblyInfoInputs.cache
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\01_LampshadeQuery.AssemblyInfo.cs
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\01_LampshadeQuery.csproj.CoreCompileInputs.cache
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\01_LampshadeQuery.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\refint\01_LampshadeQuery.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\01_LampshadeQuery.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\01_LampshadeQuery\obj\Debug\net7.0\ref\01_LampshadeQuery.dll

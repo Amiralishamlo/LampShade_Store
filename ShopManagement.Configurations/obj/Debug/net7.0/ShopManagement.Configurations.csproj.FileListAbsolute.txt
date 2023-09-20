@@ -21,3 +21,5 @@ C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Configurations\obj\Debug\net7.0\refint\ShopManagement.Configurations.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Configurations\obj\Debug\net7.0\ShopManagement.Configurations.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Configurations\obj\Debug\net7.0\ref\ShopManagement.Configurations.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Configurations\bin\Debug\net7.0\01_LampshadeQuerys.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Configurations\bin\Debug\net7.0\01_LampshadeQuerys.pdb

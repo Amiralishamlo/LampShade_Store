@@ -1,12 +1,6 @@
 ﻿using _0_Framework.Infrastructure;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Slides;
 using ShopManagement.Domain.SliderAgg;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -31,6 +25,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 PictureTitle = x.PictureTitle,
                 Text = x.Text,
                 Title=x.Title,
+                Link=x.Link,
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -43,7 +38,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Picture = x.Picture,
                 Title = x.Title,
                 IsRemoved = x.IsRemove,
-                CreationDate = x.CreationDate.ToString()
+                CreationDate = x.CreationDate.ToString(),
             }).OrderByDescending(x => x.Id).ToList();
         }
     }

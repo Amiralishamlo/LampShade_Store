@@ -20,7 +20,9 @@ namespace ShopManagement.Domain.SliderAgg
 
         public bool IsRemove {  get; private set; }
 
-        public Slide(string heading, string title, string text, string picture, string pictureAlt, string pictureTitle, string btnText)
+        public string Link { get;private set; }
+
+        public Slide(string heading, string title, string text, string picture, string pictureAlt, string pictureTitle, string btnText, string link)
         {
             Heading = heading;
             Title = title;
@@ -29,10 +31,11 @@ namespace ShopManagement.Domain.SliderAgg
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             BtnText = btnText;
-            IsRemove=false;
+            IsRemove = false;
+            Link = link;
         }
 
-        public void Edit(string heading, string title, string text, string picture, string pictureAlt, string pictureTitle, string btnText)
+        public void Edit(string heading, string title, string text, string picture, string pictureAlt, string pictureTitle, string btnText, string link)
         {
             Heading = heading;
             Title = title;
@@ -41,6 +44,7 @@ namespace ShopManagement.Domain.SliderAgg
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             BtnText = btnText;
+            Link = link;
         }
         public void Remove()
         {

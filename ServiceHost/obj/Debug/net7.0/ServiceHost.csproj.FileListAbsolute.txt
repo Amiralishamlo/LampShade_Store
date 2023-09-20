@@ -264,3 +264,5 @@ C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bi
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\01_LampshadeQuerys.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\01_LampshadeQuerys.pdb

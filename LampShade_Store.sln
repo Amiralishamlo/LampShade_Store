@@ -7,23 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShopManagement", "ShopManag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Domain", "SM.Domain", "{82831A7E-74D4-4197-ABAA-3A85BF818E58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Domain", "ShopManagement.Domain\ShopManagement.Domain.csproj", "{C73D8813-9195-4F7B-92E6-1E6582451B02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Domain", "ShopManagement.Domain\ShopManagement.Domain.csproj", "{C73D8813-9195-4F7B-92E6-1E6582451B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{4D0D49DA-BCF9-40F8-B144-3B576C1CFD02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0_Framework", "0_Framework\0_Framework.csproj", "{4D0D49DA-BCF9-40F8-B144-3B576C1CFD02}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Application", "SM.Application", "{91569F12-055E-4DFC-8D43-65FE4CAF0228}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Application.Contracts", "ShopManagement.Application.Contracts\ShopManagement.Application.Contracts.csproj", "{23043256-24A8-460B-804C-158D5F99464A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Application.Contracts", "ShopManagement.Application.Contracts\ShopManagement.Application.Contracts.csproj", "{23043256-24A8-460B-804C-158D5F99464A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Application", "ShopManagement.Application\ShopManagement.Application.csproj", "{51DB36C3-8716-411D-A5CB-17EC67DA40F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Application", "ShopManagement.Application\ShopManagement.Application.csproj", "{51DB36C3-8716-411D-A5CB-17EC67DA40F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Infrastructure", "SM.Infrastructure", "{08943222-3ED5-4967-BEA2-888D8FCE1A06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Infrastructure.EFCore", "ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj", "{89D730DA-5522-42CC-92B9-E7B0930772B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Infrastructure.EFCore", "ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj", "{89D730DA-5522-42CC-92B9-E7B0930772B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Configurations", "ShopManagement.Configurations\ShopManagement.Configurations.csproj", "{BEB00A01-22A8-4B7C-8F42-8EB2587DC564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Configurations", "ShopManagement.Configurations\ShopManagement.Configurations.csproj", "{BEB00A01-22A8-4B7C-8F42-8EB2587DC564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{2C41BF9B-F33C-4008-B00F-9C3BE5DA74E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{2C41BF9B-F33C-4008-B00F-9C3BE5DA74E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_LampshadeQuerys", "01_LampshadeQuerys\01_LampshadeQuerys.csproj", "{25177754-217F-4DAF-B15B-BEA93F20B767}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{2C41BF9B-F33C-4008-B00F-9C3BE5DA74E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C41BF9B-F33C-4008-B00F-9C3BE5DA74E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C41BF9B-F33C-4008-B00F-9C3BE5DA74E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25177754-217F-4DAF-B15B-BEA93F20B767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25177754-217F-4DAF-B15B-BEA93F20B767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25177754-217F-4DAF-B15B-BEA93F20B767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25177754-217F-4DAF-B15B-BEA93F20B767}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
