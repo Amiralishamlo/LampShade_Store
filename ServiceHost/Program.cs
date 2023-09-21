@@ -1,3 +1,4 @@
+using DiscountManagement.Configuration;
 using ShopManagement.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ var connectionString = builder.Configuration.GetConnectionString("LampShade_Stor
 #region service
 
 ShopManagementBootstrapper.Configure(builder.Services, connectionString);
+DiscountManagementBootstrapper.Configure(builder.Services, connectionString);
 
 #endregion
 

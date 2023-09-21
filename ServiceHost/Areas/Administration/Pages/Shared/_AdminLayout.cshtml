@@ -35,6 +35,9 @@
     <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="~/AdminTheme/assets/js/modernizr.min.js"></script>
 
+    <!--Persian date-->
+    <link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet" />
+
 </head>
 
 <body class="fixed-left">
@@ -142,47 +145,7 @@
             </div>
         </div>
 
-        <div class="left side-menu">
-            <div class="sidebar-inner slimscrollleft">
-                <div class="user-details">
-                    <div class="pull-right">
-                        <img src="~/AdminTheme/assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
-                    </div>
-                    <div class="user-info">
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">جان دو <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
-                                <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
-                                <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
-                                <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
-                            </ul>
-                        </div>
-
-                        <p class="text-muted m-0">مدیر سیستم</p>
-                    </div>
-                </div>
-                <!--- Divider -->
-                <div id="sidebar-menu">
-                    <ul>
-                        <li>
-                            <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
-                        </li>
-                        <li class="has_sub">
-                            <a class="waves-effect"><i class="md md-shopping-cart"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a asp-page="/Shop/Slides/Index" >اسلایدر</a></li>
-                                <li><a asp-page="/Shop/ProductCategories/Index">گروه محصولات</a></li>
-                                <li><a asp-page="/Shop/Products/Index">محصولات</a></li>
-                                <li><a asp-page="/Shop/ProductPictures/Index">عکس محصولات</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+          <partial name="_Menu" />
 
         <div class="content-page">
             <!-- Start content -->
@@ -262,19 +225,18 @@
 
     <script src="~/AdminTheme/assets/js/site.js"></script>
 
+
+    <script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
+    <script src="~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
+
     @RenderSection("Scripts", false)
 
-    <!-- <script type="text/javascript"> -->
-    <!-- /* ============================================== -->
-    <!-- Counter Up -->
-    <!-- =============================================== */ -->
-    <!-- jQuery(document).ready(function($) { -->
-    <!-- $('.counter').counterUp({ -->
-    <!-- delay: 100, -->
-    <!-- time: 1200 -->
-    <!-- }); -->
-    <!-- }); -->
-    <!-- </script> -->
+    <script>
+        $('.persianDateInput').persianDatepicker({
+            format: 'YYYY/MM/DD',
+            autoClose: true
+        });
+    </script>
 
 </body>
 </html>

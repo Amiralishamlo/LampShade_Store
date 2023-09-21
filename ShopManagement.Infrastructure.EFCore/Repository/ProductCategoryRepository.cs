@@ -1,4 +1,5 @@
-﻿using _0_Framework.Infrastructure;
+﻿using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategorys;
 using ShopManagement.Domain.ProductCategoryAgg;
 
@@ -43,7 +44,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             var query = _shopContext.ProductCategories.Select(x => new ProductCategoryViewModel()
             {
                 Picture = x.Picture,
-                CreateDate=x.CreationDate.ToString(),
+                CreateDate=x.CreationDate.ToFarsi(),
                 Id=x.Id, 
                 Name=x.Name,
             });

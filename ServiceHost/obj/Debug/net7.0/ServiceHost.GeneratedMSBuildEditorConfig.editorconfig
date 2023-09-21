@@ -16,8 +16,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Discounts/ColleagueDiscounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Discounts/ColleagueDiscounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Discounts/ColleagueDiscounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Discounts/CustomerDiscounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Discounts/CustomerDiscounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Discounts/CustomerDiscounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Shared/_Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hhcmVkXF9NZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/amira/OneDrive/Desktop/Shop_Atria/Source/LampShade_Store/ServiceHost/Areas/Administration/Pages/Shared/_ValidationScriptsPartial.cshtml]
