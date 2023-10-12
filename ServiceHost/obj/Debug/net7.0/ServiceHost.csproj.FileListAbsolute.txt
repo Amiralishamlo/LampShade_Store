@@ -276,3 +276,13 @@ C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\ob
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\obj\Debug\net7.0\ServiceHost.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\obj\Debug\net7.0\ServiceHost.genruntimeconfig.cache
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\obj\Debug\net7.0\ref\ServiceHost.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Application.Contract.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Application.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Domain.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Infrastructure.Configuration.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryMangement.Infrastructure.EFCore.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Infrastructure.Configuration.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Application.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Application.Contract.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryManagement.Domain.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ServiceHost\bin\Debug\net7.0\InventoryMangement.Infrastructure.EFCore.pdb
