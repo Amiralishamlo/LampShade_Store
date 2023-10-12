@@ -1,13 +1,12 @@
 ﻿using _0_Framework.Application;
 using ShopManagement.Application.Contracts.Products;
 using ShopManagement.Domain.ProductAgg;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ShopManagement.Application
 {
     public class ProductApplication : IProductApplication
     {
-        private readonly IProductRepository _repository;
+        private readonly IProductRepository _repository; 
 
         public ProductApplication(IProductRepository repository)
         {
@@ -20,7 +19,7 @@ namespace ShopManagement.Application
             var slug=create.Slug.Slugify();
             if(_repository.Exists(x=>x.Name==create.Name))
                 return opertion.Failed(ApplicationMessages.DuplicatedRecord);
-            var product = new Product(create.Name, create.UnitPrice, create.Code, create.ShortDescription, create.Description, create.Picture, create.PictureAlt, create.PictureTitle, create.CategoryId, slug, create.Keywords, create.MetaDescription);
+            var product = new Product(create.Name, create.Code, create.ShortDescription, create.Description, create.Picture, create.PictureAlt, create.PictureTitle, create.CategoryId, slug, create.Keywords, create.MetaDescription);
             _repository.Create(product);
             _repository.SaveChanges();
             return opertion.Succedded();
@@ -36,7 +35,7 @@ namespace ShopManagement.Application
             if (_repository.Exists(x => x.Name == command.Name && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var slug = command.Slug.Slugify();
-            product.Edit(command.Name, command.UnitPrice, command.Code, command.ShortDescription, command.Description, command.Picture, command.PictureAlt, command.PictureTitle, command.CategoryId, slug, command.Keywords, command.MetaDescription);
+            product.Edit(command.Name, command.Code, command.ShortDescription, command.Description, command.Picture, command.PictureAlt, command.PictureTitle, command.CategoryId, slug, command.Keywords, command.MetaDescription);
 
             _repository.SaveChanges();
             return operation.Succedded();
@@ -50,30 +49,6 @@ namespace ShopManagement.Application
         public List<ProductViewModel> GetProducts()
         {
             return _repository.GetProducts();
-        }
-
-        public OperationResult IsStock(long id)
-        {
-            var operation = new OperationResult();
-            var product = _repository.Get(id);
-            if (product == null)
-                return operation.Failed(ApplicationMessages.RecordNotFound);
-
-            product.InStock();
-            _repository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public OperationResult NotIsStock(long id)
-        {
-            var operation = new OperationResult();
-            var product = _repository.Get(id);
-            if (product == null)
-                return operation.Failed(ApplicationMessages.RecordNotFound);
-
-            product.NotInStock();
-            _repository.SaveChanges();
-            return operation.Succedded();
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
