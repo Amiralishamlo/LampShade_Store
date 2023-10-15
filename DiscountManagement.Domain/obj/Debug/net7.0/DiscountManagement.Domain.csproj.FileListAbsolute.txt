@@ -3,8 +3,10 @@ C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManage
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\DiscountManagement.Domain.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\0_Framework.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\DiscountManagement.Application.Contract.dll
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\ShopManagement.Application.Contracts.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\0_Framework.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\DiscountManagement.Application.Contract.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\ShopManagement.Application.Contracts.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\obj\Debug\net7.0\DiscountManagement.Domain.csproj.AssemblyReference.cache
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\obj\Debug\net7.0\DiscountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\obj\Debug\net7.0\DiscountManagement.Domain.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@ C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManage
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\obj\Debug\net7.0\refint\DiscountManagement.Domain.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\obj\Debug\net7.0\DiscountManagement.Domain.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\obj\Debug\net7.0\ref\DiscountManagement.Domain.dll
-C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\ShopManagement.Application.Contracts.dll
-C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\DiscountManagement.Domain\bin\Debug\net7.0\ShopManagement.Application.Contracts.pdb

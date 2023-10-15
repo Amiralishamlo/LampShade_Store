@@ -1,9 +1,9 @@
-﻿using _01_LampshadeQuerys.Contract.Slide;
+﻿using _01_LampshadeQuery.Contracts.Slide;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServiceHost.ViewComponents
 {
-    public class SlideViewComponent: ViewComponent
+    public class SlideViewComponent : ViewComponent
     {
         private readonly ISlideQuery _slideQuery;
 
@@ -11,6 +11,7 @@ namespace ServiceHost.ViewComponents
         {
             _slideQuery = slideQuery;
         }
+
         public IViewComponentResult Invoke()
         {
             var slides = _slideQuery.GetSlides();

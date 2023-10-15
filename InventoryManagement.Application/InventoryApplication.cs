@@ -28,18 +28,17 @@ namespace InventoryManagement.Application
 
         public OperationResult Edit(EditInventory command)
         {
-            var opertion = new OperationResult();
-            var inventory=_inventoryRepository.Get(command.ProductId);
+            var operation = new OperationResult();
+            var inventory = _inventoryRepository.Get(command.Id);
+            if (inventory == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (inventory != null)
-                return opertion.Failed(ApplicationMessages.RecordNotFound);
-
-            if(_inventoryRepository.Exists(x=>x.Id==command.Id))
-                return opertion.Failed(ApplicationMessages.DuplicatedRecord);
+            if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId && x.Id != command.Id))
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
             inventory.Edit(command.ProductId, command.UnitPrice);
             _inventoryRepository.SaveChanges();
-            return opertion.Succedded();
+            return operation.Succedded();
         }
 
         public EditInventory GetDetails(long id)

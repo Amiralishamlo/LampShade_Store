@@ -3842,19 +3842,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "01_LampshadeQuerys/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "ShopManagement.Infrastructure.EFCore": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/01_LampshadeQuerys.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/01_LampshadeQuerys.dll": {}
-        }
-      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -4048,11 +4035,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "01_LampshadeQuerys": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",
-          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+          "ShopManagement.Infrastructure.EFCore": "1.0.0",
+          "_01_LampshadeQuery": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ShopManagement.Configurations.dll": {}
@@ -4088,6 +4075,23 @@
         },
         "runtime": {
           "bin/placeholder/ShopManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "_01_LampshadeQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DiscountManagement.Infrastructure.EFCore": "1.0.0",
+          "InventoryMangement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/_01_LampshadeQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/_01_LampshadeQuery.dll": {}
         }
       }
     }
@@ -11411,11 +11415,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "01_LampshadeQuerys/1.0.0": {
-      "type": "project",
-      "path": "../01_LampshadeQuerys/01_LampshadeQuerys.csproj",
-      "msbuildProject": "../01_LampshadeQuerys/01_LampshadeQuerys.csproj"
-    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
@@ -11495,6 +11494,11 @@
       "type": "project",
       "path": "../ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
+    },
+    "_01_LampshadeQuery/1.0.0": {
+      "type": "project",
+      "path": "../_01_LampshadeQuery/_01_LampshadeQuery.csproj",
+      "msbuildProject": "../_01_LampshadeQuery/_01_LampshadeQuery.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11503,7 +11507,8 @@
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.9",
-      "ShopManagement.Configurations >= 1.0.0"
+      "ShopManagement.Configurations >= 1.0.0",
+      "_01_LampshadeQuery >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11541,6 +11546,9 @@
             },
             "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\ShopManagement.Configurations\\ShopManagement.Configurations.csproj": {
               "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\ShopManagement.Configurations\\ShopManagement.Configurations.csproj"
+            },
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\_01_LampshadeQuery\\_01_LampshadeQuery.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\LampShade_Store\\_01_LampshadeQuery\\_01_LampshadeQuery.csproj"
             }
           }
         }
@@ -11585,7 +11593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

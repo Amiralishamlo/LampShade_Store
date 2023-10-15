@@ -37,6 +37,12 @@ namespace _0_Framework.Application
             return $"_{date.Hour:00}_{date.Minute:00}_{date.Second:00}";
         }
 
+        public static string ToDiscountFormat(this DateTime date)
+        {
+            if (date == new DateTime()) return "";
+            return $"{date.Year}/{date.Month}/{date.Day}";
+        }
+
         public static string ToFarsiFull(this DateTime date)
         {
             var pc = new PersianCalendar();
@@ -94,17 +100,9 @@ namespace _0_Framework.Application
             return new DateTime(year, month, day, new PersianCalendar());
         }
 
-        public static string ToMoney(this string myMoney)
+        public static string ToMoney(this double myMoney)
         {
-            //var cultureInfo = new CultureInfo("fa-Ir")
-            //{
-            //    NumberFormat = { CurrencyPositivePattern = 3, CurrencyNegativePattern = 3 }
-            //};
-
-            //var result = string.Format(cultureInfo, "{0:C0}", myMoney);
-            var number = int.Parse(myMoney);
-            var result = number.ToString("N0", CultureInfo.CreateSpecificCulture("fa-ir"));
-            return result;
+            return myMoney.ToString("N0", CultureInfo.CreateSpecificCulture("fa-ir"));
         }
         public static string ToFileName(this DateTime date)
         {

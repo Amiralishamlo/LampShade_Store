@@ -5,8 +5,8 @@ C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\0_Framework.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\ShopManagement.Application.Contracts.dll
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\ShopManagement.Domain.dll
-C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\ShopManagement.Domain.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\0_Framework.pdb
+C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\ShopManagement.Domain.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\bin\Debug\net7.0\ShopManagement.Application.Contracts.pdb
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\obj\Debug\net7.0\ShopManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
 C:\Users\amira\OneDrive\Desktop\Shop_Atria\Source\LampShade_Store\ShopManagement.Infrastructure.EFCore\obj\Debug\net7.0\ShopManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig

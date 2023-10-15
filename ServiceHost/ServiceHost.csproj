@@ -7,20 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Theme\assets\fonts\fontawesome-webfont3e6e.svg" />
-    <None Include="wwwroot\Theme\assets\fonts\fontawesome-webfont3e6e.woff2" />
-    <None Include="wwwroot\Theme\assets\fonts\ionicons28b5.svg" />
-    <None Include="wwwroot\Theme\assets\fonts\IranianSans.svg" />
-    <None Include="wwwroot\Theme\assets\fonts\IranianSans.woff2" />
-    <None Include="wwwroot\Theme\assets\js\active.js" />
-    <None Include="wwwroot\Theme\assets\js\ajax-mail.js" />
-    <None Include="wwwroot\Theme\assets\js\vendors.js" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
     <ProjectReference Include="..\InventoryManagement.Infrastructure.Configuration\InventoryManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\ShopManagement.Configurations\ShopManagement.Configurations.csproj" />
+    <ProjectReference Include="..\_01_LampshadeQuery\_01_LampshadeQuery.csproj" />
   </ItemGroup>
 
   <ItemGroup>

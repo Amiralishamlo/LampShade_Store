@@ -1,9 +1,9 @@
-﻿using _01_LampshadeQuerys.Contract.ProductCategory;
+﻿using _01_LampshadeQuery.Contracts.ProductCategory;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServiceHost.ViewComponents
 {
-    public class ProductCategoryViewComponent: ViewComponent
+    public class ProductCategoryViewComponent : ViewComponent
     {
         private readonly IProductCategoryQuery _productCategoryQuery;
 
