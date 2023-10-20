@@ -3279,11 +3279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+      "projectUniqueName": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
       "projectName": "DiscountManagement.Configuration",
-      "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+      "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
       "packagesPath": "C:\\Users\\amira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Configuration\\obj\\",
+      "outputPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Configuration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3300,14 +3300,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

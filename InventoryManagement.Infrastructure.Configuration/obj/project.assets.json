@@ -3279,11 +3279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+      "projectUniqueName": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
       "projectName": "InventoryManagement.Infrastructure.Configuration",
-      "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+      "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
       "packagesPath": "C:\\Users\\amira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\obj\\",
+      "outputPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3300,14 +3300,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n5lRJpvhJ4VgIKi9PImw548qYRefY33mHdSNJEsY3OWBOZ3EeNYjpx+NUFLGbucuFmGK2pnjosNSaE3fvbwPZg==",
+  "dgSpecHash": "CkBBFFgvNGUwdDFUV5PgLjm5tn0SBq2TEO9F2bWQ8zB6EeJgqWqUq+2+hZABnupTl3jMlyCGjGMqXNO7PCePuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -3361,11 +3361,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+      "projectUniqueName": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
       "projectName": "ShopManagement.Configuration",
-      "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+      "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
       "packagesPath": "C:\\Users\\amira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\obj\\",
+      "outputPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3382,17 +3382,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
             },
-            "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+            "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

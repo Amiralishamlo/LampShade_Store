@@ -789,11 +789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\0_Framework\\0_Framework.csproj",
+      "projectUniqueName": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\0_Framework\\0_Framework.csproj",
       "projectName": "0_Framework",
-      "projectPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\0_Framework\\0_Framework.csproj",
+      "projectPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\0_Framework\\0_Framework.csproj",
       "packagesPath": "C:\\Users\\amira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\0_Framework\\obj\\",
+      "outputPath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\0_Framework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amira\\AppData\\Roaming\\NuGet\\NuGet.Config",

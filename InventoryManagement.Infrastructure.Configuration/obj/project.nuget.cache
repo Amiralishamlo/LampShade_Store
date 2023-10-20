@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QJUw6a4Cl4joIDoN3xD1J3yTIN9fAmx/K84jBvvOqNL2j3Sa3UbKZ0sdoqA98b1f8XTWqIEoAnS+zTVViw3u0A==",
+  "dgSpecHash": "mMrnZ7c+EbWV+s6lOz87Tt7IorJ3PSyBx+BeEy34OIbWNZS/FlsuH1+Ht5m2OaDQnphQb3AXqgXBNeINnCKXSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

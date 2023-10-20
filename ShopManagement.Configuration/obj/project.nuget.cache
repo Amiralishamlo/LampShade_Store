@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+oAMsquwCgAkLTyjg4elDfJRTb8Gqwo+7ig93xAEn+DhoqVRvilP8yQw2+pXSa6ci8oQ3MX7gkNy0L+m5SRBtQ==",
+  "dgSpecHash": "ikydqkX8U4edAhIawRlF1/Q6xSBKcj0Biu2R8qhz59H1D/zKZrL00TI7mIZv9V+Nx58YgLOnVI9xvsxoVCUDSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

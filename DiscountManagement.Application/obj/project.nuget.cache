@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QokYasa2XgDdfyjHRSDNPaiWbNec9AOT0f8rzWYebmZsqsbu+LZcww8hWZsjj6MsuB9aidr67bMvcp+g9fT1cw==",
+  "dgSpecHash": "kipDpAbVtGNws0FAIopn4D5ntcWH5MuFS8NpNBzXM2y7w6QwjiatWRYBK0mlY9QrBkVDZwAKWBDUs05/MulE+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

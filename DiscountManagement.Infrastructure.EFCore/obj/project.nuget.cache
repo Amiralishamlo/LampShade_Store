@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MbmeuAcaVWWECKeiULpuPwnYF4p17/n5lKn2g1QJTAJcbqp28h45nUWfqi8UWRmEYc6Kl9Vk7uywuRTEwPv6Bg==",
+  "dgSpecHash": "lWJxHZsADWkQ7wM+ZIixLYbbq/6uPnp6soKv5j7VZ/Mr1vzxyCSxYjfEZnIqitCBSwCE3somwnBLig/Ow9V+3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

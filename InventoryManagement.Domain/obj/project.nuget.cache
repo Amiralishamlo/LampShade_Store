@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3D54Y0FyTuCL2PGUNdLsp8j2LrGFFm+5ZOJlHFdZ0H/npzvan5ngFLbeV+1SKeNOFte7owGRtf/OwFjj0VxEMg==",
+  "dgSpecHash": "6T16gkO65Fdv+GoEFCV5qIvnHOXUAouHep+OAGPlVcG4NpH2bpZCgWXUK/2T1mtr4VC6zvFPZP/vP9D0tY6K9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

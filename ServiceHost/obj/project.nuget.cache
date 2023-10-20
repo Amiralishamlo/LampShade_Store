@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2fH8tdT39VgfEYE0ggcmLpn43zIsSfvLf2Fbap2LLSJTh1MnC0P1562YMWQ8EyIha/7hlGa0maKLmUcRG2qbSA==",
+  "dgSpecHash": "G8jDGlJMKDoMabtPM4zIfSo+D4cisdB0/tmnKgDZ8M0ZcCH7jY170fYbWInQMG9IuivH+4MWGK9KCK9+cneSvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

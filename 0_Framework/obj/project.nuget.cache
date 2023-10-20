@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pQky0cODP4Pm2vZyrA0XJSriTrigK+wAr2KYac7OhJj/cBjDmnbXfq1C3/IdFhsHHzlBU8h6qcBlC+MDwGsPTA==",
+  "dgSpecHash": "W7XebOUN7ApAm+RQkJoOrIs0VVdseEmLs8mtli2ridGJws4/G4vIRqlx6S00TO4LNF3dUI/UgPhyIamo3H+n8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\0_Framework\\0_Framework.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\0_Framework\\0_Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

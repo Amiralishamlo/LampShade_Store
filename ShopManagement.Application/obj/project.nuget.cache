@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GkzkrH9MpYaUsSqxf0+AITR1Wx0Vy6yl48JynfWhVGSTKfSWOBv0pl/mc7qUQHLHFJ+LAnwzg1Yu3qVcAvqvAQ==",
+  "dgSpecHash": "wUY2aiWoESN96AdxurNCZYmPpkJBg/dG/m4JxopueGq77+8Qj9z+rWaRa/C0gdFtZpRWcbqrfeywmfGbuMsp/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amira\\Downloads\\Compressed\\Source\\Source\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+  "projectFilePath": "C:\\Users\\amira\\OneDrive\\Desktop\\Shop_Atria\\Source\\Source\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\amira\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
