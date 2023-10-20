@@ -1,6 +1,6 @@
 ﻿using _0_Framework.Application;
-using System;
 using System.Collections.Generic;
+
 namespace DiscountManagement.Application.Contract.ColleagueDiscount
 {
     public interface IColleagueDiscountApplication

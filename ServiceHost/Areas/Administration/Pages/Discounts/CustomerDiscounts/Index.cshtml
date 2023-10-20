@@ -8,9 +8,6 @@
     ViewData["title"] = "مدیریت تخفیفات مشتریان";
 }
 
-<link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet" />
-
-
 <div class="row">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
@@ -29,16 +26,16 @@
             <div class="panel-body">
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
-                        <label class="sr-only" asp-for="@Model.SearchModel.StartDate"></label>
-                        <input class="form-control persianDateInput" asp-for="@Model.SearchModel.StartDate">
+                        <label class="sr-only" asp-for="SearchModel.StartDate"></label>
+                        <input class="form-control persianDateInput" asp-for="SearchModel.StartDate">
                     </div>
                     <div class="form-group">
-                        <label class="sr-only" asp-for="@Model.SearchModel.EndDate"></label>
-                        <input class="form-control persianDateInput" asp-for="@Model.SearchModel.EndDate">
+                        <label class="sr-only" asp-for="SearchModel.EndDate"></label>
+                        <input class="form-control persianDateInput" asp-for="SearchModel.EndDate">
                     </div>
                     <div class="form-group">
-                        <label class="sr-only" asp-for="@Model.SearchModel.ProductId"></label>
-                        <select class="form-control" asp-for="@Model.SearchModel.ProductId" asp-items="@Model.Products">
+                        <label class="sr-only" asp-for="SearchModel.ProductId"></label>
+                        <select class="form-control" asp-for="SearchModel.ProductId" asp-items="Model.Products">
                             <option value="0">انتخاب محصول ...</option>
                         </select>
                     </div>
@@ -100,15 +97,6 @@
     </div>
 </div>
 
-<script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
-<script src="~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
-<script>
-    $('.persianDateInput').persianDatepicker({
-        format: 'YYYY/MM/DD',
-        autoClose: true
-    });
-</script>
-
 @section Scripts {
     <script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
     <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
@@ -119,4 +107,3 @@
         });
     </script>
 }
-

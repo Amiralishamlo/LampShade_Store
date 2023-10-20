@@ -1,66 +1,78 @@
-﻿
-
-using _0_Framework.Application;
-using ShopManagement.Application.Contracts.ProductCategorys;
+﻿using _0_Framework.Application;
+using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
+using System.Collections.Generic;
 
 namespace ShopManagement.Application
 {
-    public class ProductCategoryApplication:IProductCategoryApplication
+    public class ProductCategoryApplication : IProductCategoryApplication
     {
-        private readonly IProductCategoryRepository _repository;
+        private readonly IFileUploader _fileUploader;
+        private readonly IProductCategoryRepository _productCategoryRepostory;
 
-        public ProductCategoryApplication(IProductCategoryRepository repository)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepostory, IFileUploader fileUploader)
         {
-            _repository = repository;
+            _fileUploader = fileUploader;
+            _productCategoryRepostory = productCategoryRepostory;
         }
 
         public OperationResult Create(CreateProductCategory command)
         {
-            var opertion = new OperationResult();
-            var slug= command.Slug.Slugify();
-            if (_repository.Exists(x=>x.Name==command.Name))
-                return opertion.Failed(ApplicationMessages.RecordNotFound);
-            var productCategory = new ProductCategory(command.Name,command.Description,command.Picture,
-                command.PictureAlt,command.PictureTitle,command.Keywords,command.MetaDescription,slug);
-            _repository.Create(productCategory);
-            _repository.SaveChanges();
-            return opertion.Succedded();
+            var operation = new OperationResult();
+            if (_productCategoryRepostory.Exists(x => x.Name == command.Name))
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
+
+            var slug = command.Slug.Slugify();
+
+            var picturePath = $"{command.Slug}";
+            var pictureName = _fileUploader.Upload(command.Picture, picturePath);
+
+            var productCategory = new ProductCategory(command.Name, command.Description,
+                pictureName, command.PictureAlt, command.PictureTitle, command.Keywords,
+                command.MetaDescription, slug);
+
+            _productCategoryRepostory.Create(productCategory);
+            _productCategoryRepostory.SaveChanges();
+            return operation.Succedded();
         }
 
         public OperationResult Edit(EditProductCategory command)
         {
             var operation = new OperationResult();
-            var productCategory = _repository.Get(command.Id);
+            var productCategory = _productCategoryRepostory.Get(command.Id);
 
             if (productCategory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (_repository.Exists(x => x.Name == command.Name && x.Id != command.Id))
+            if (_productCategoryRepostory.Exists(x => x.Name == command.Name && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
             var slug = command.Slug.Slugify();
-            productCategory.Edit(command.Name, command.Description, command.Picture,
+            
+            var picturePath = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Picture, picturePath);
+            
+            productCategory.Edit(command.Name, command.Description, fileName,
                 command.PictureAlt, command.PictureTitle, command.Keywords,
                 command.MetaDescription, slug);
 
-            _repository.SaveChanges();
+            _productCategoryRepostory.SaveChanges();
             return operation.Succedded();
         }
 
         public EditProductCategory GetDetails(long id)
         {
-            return _repository.GetDetails(id);
+            return _productCategoryRepostory.GetDetails(id);
         }
 
-        public List<ProductCategoryViewModel> GetProductCategorys()
+        public List<ProductCategoryViewModel> GetProductCategories()
         {
-            return _repository.GetProductCategorys();
+            return _productCategoryRepostory.GetProductCategories();
         }
 
-        public List<ProductCategoryViewModel> Search(ProductCategorySearchModel seachModel)
+        public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
         {
-            return _repository.Search(seachModel);
+            return _productCategoryRepostory.Search(searchModel);
         }
     }
 }

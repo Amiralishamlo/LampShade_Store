@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ShopManagement.Application.Contracts.ProductPictures;
-using ShopManagement.Application.Contracts.Products;
+using ShopManagement.Application.Contracts.Product;
+using ShopManagement.Application.Contracts.ProductPicture;
+using System.Collections.Generic;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
 {
     public class IndexModel : PageModel
     {
-
         [TempData]
         public string Message { get; set; }
         public ProductPictureSearchModel SearchModel;

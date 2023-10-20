@@ -1,80 +1,88 @@
 ﻿using _0_Framework.Application;
-using ShopManagement.Application.Contracts.ProductPictures;
+using ShopManagement.Application.Contracts.ProductPicture;
+using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductPictureAgg;
+using System.Collections.Generic;
 
 namespace ShopManagement.Application
 {
-    public class ProductPictureApplication:IProductPictureApplication
+    public class ProductPictureApplication : IProductPictureApplication
     {
-        private readonly IProductPictureRepository _repository;
+        private readonly IFileUploader _fileUploader;
+        private readonly IProductRepository _productRepository;
+        private readonly IProductPictureRepository _productPictureRepository;
 
-        public ProductPictureApplication(IProductPictureRepository repository)
+        public ProductPictureApplication(IProductPictureRepository productPictureRepository, IProductRepository productRepository, IFileUploader fileUploader)
         {
-            _repository = repository;
+            _fileUploader = fileUploader;
+            _productRepository = productRepository;
+            _productPictureRepository = productPictureRepository;
         }
 
         public OperationResult Create(CreateProductPicture command)
         {
-            var opertion = new OperationResult();
-            if(_repository.Exists(x=>x.Picture==command.Picture && x.ProductId==command.ProductId))
-                return opertion.Failed(ApplicationMessages.DuplicatedRecord);
+            var operation = new OperationResult();
+            //if (_productPictureRepository.Exists(x => x.Picture == command.Picture && x.ProductId == command.ProductId))
+            //    return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
-            var productPicture = new ProductPicture(command.ProductId,command.Picture,command.PictureAlt,command.PictureTitle );
-            _repository.Create(productPicture);
-            _repository.SaveChanges();
-            return opertion.Succedded();
+            var product = _productRepository.GetProductWithCategory(command.ProductId);
+
+            var path = $"{product.Category.Slug}//{product.Slug}";
+            var picturePath = _fileUploader.Upload(command.Picture, path);
+
+            var productPicture = new ProductPicture(command.ProductId, picturePath, command.PictureAlt, command.PictureTitle);
+            _productPictureRepository.Create(productPicture);
+            _productPictureRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public OperationResult Edit(EditProductPicture command)
         {
             var operation = new OperationResult();
-            var productPicture = _repository.Get(command.Id);
+            var productPicture = _productPictureRepository.GetWithProductAndCategory(command.Id);
             if (productPicture == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (_repository.Exists(x =>
-            x.Picture == command.Picture
-            && x.ProductId == command.ProductId
-            && x.Id != command.Id))
-                return operation.Failed(ApplicationMessages.DuplicatedRecord);
+            var path = $"{productPicture.Product.Category.Slug}//{productPicture.Product.Slug}";
+            var picturePath = _fileUploader.Upload(command.Picture, path);
 
-            productPicture.Edit(command.ProductId, command.Picture, command.PictureAlt, command.PictureTitle);
-            _repository.SaveChanges();
+            productPicture.Edit(command.ProductId, picturePath, command.PictureAlt, command.PictureTitle);
+            _productPictureRepository.SaveChanges();
             return operation.Succedded();
         }
 
         public EditProductPicture GetDetails(long id)
         {
-            return _repository.GetDetails(id);
+            return _productPictureRepository.GetDetails(id);
         }
 
         public OperationResult Remove(long id)
         {
             var operation = new OperationResult();
-            var productPicture = _repository.Get(id);
+            var productPicture = _productPictureRepository.Get(id);
             if (productPicture == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             productPicture.Remove();
-            _repository.SaveChanges();
+            _productPictureRepository.SaveChanges();
             return operation.Succedded();
         }
 
         public OperationResult Restore(long id)
         {
             var operation = new OperationResult();
-            var productPicture = _repository.Get(id);
+            var productPicture = _productPictureRepository.Get(id);
             if (productPicture == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             productPicture.Restore();
-            _repository.SaveChanges();
+            _productPictureRepository.SaveChanges();
             return operation.Succedded();
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)
         {
-            return _repository.Search(searchModel);
+            return _productPictureRepository.Search(searchModel);
         }
     }
 }

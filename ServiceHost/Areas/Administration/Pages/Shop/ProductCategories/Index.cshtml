@@ -2,6 +2,7 @@
 @model ServiceHost.Areas.Administration.Pages.Shop.ProductCategories.IndexModel
 @{
 }
+
 @{
     Layout = "Shared/_AdminLayout";
     ViewData["title"] = "مدیریت گروه محصولات";
@@ -25,8 +26,8 @@
             <div class="panel-body">
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
-                        <label class="sr-only" asp-for="searchModel.Name"></label>
-                        <input class="form-control" asp-for="searchModel.Name" placeholder="نام گروه محصولی">
+                        <label class="sr-only" asp-for="SearchModel.Name"></label>
+                        <input class="form-control" asp-for="SearchModel.Name" placeholder="نام گروه محصولی">
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">مشاهده همه</a>
@@ -56,17 +57,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.productCategories)
+                                @foreach (var item in Model.ProductCategories)
                                 {
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>
-                                            <img src="@item.Picture" style="width: 70px; height: 70px" />
+                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
                                         </td>
                                         <td>@item.Name</td>
-                                        <td>@item.CreateDate</td>
+                                        <td>@item.CreationDate</td>
                                         <td>
-                                            <a class="btn btn-warning pull-right m-rl-5"
+                                            <a class="btn btn-warning pull-right m-rl-5" 
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>

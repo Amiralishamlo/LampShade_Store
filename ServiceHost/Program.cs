@@ -1,6 +1,12 @@
+using _0_Framework.Application;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
-using ShopManagement.Configurations;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using ServiceHost;
+using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +17,10 @@ var connectionString = builder.Configuration.GetConnectionString("LampShade_Stor
 
 #region service
 
-ShopManagementBootstrapper.Configure(builder.Services, connectionString);
+ShopManagementBoostrapper.Configure(builder.Services, connectionString);
 DiscountManagementBootstrapper.Configure(builder.Services, connectionString);
 InventoryManagementBootstrapper.Configure(builder.Services, connectionString);
+builder.Services.AddTransient<IFileUploader, FileUploader>();
 
 #endregion
 

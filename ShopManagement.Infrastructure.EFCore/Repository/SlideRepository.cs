@@ -1,45 +1,47 @@
 ﻿using _0_Framework.Application;
 using _0_Framework.Infrastructure;
-using ShopManagement.Application.Contracts.Slides;
-using ShopManagement.Domain.SliderAgg;
+using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.SlideAgg;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
-    public class SlideRepository:RepositoryBase<long,Slide>,ISlideRepository
+    public class SlideRepository : RepositoryBase<long, Slide>, ISlideRepository
     {
-        private readonly ShopContext _shopContext;
+        private readonly ShopContext _context;
 
-        public SlideRepository(ShopContext shopContext):base(shopContext)
+        public SlideRepository(ShopContext context) : base(context)
         {
-            _shopContext = shopContext;
+            _context = context;
         }
 
         public EditSlide GetDetails(long id)
         {
-            return _shopContext.Slides.Select(x => new EditSlide
+            return _context.Slides.Select(x => new EditSlide
             {
                 Id = x.Id,
                 BtnText = x.BtnText,
                 Heading = x.Heading,
-                Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Text = x.Text,
-                Title=x.Title,
-                Link=x.Link,
+                Link = x.Link,
+                Title = x.Title
             }).FirstOrDefault(x => x.Id == id);
         }
 
         public List<SlideViewModel> GetList()
         {
-            return _shopContext.Slides.Select(x => new SlideViewModel
+            return _context.Slides.Select(x => new SlideViewModel
             {
                 Id = x.Id,
                 Heading = x.Heading,
                 Picture = x.Picture,
                 Title = x.Title,
-                IsRemoved = x.IsRemove,
-                CreationDate = x.CreationDate.ToFarsi(),
+                IsRemoved = x.IsRemoved,
+                CreationDate = x.CreationDate.ToFarsi()
             }).OrderByDescending(x => x.Id).ToList();
         }
     }

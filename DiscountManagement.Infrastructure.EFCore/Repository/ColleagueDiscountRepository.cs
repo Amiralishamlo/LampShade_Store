@@ -3,10 +3,12 @@ using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
 using DiscountManagement.Domain.ColleagueDiscountAgg;
 using ShopManagement.Infrastructure.EFCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository
 {
-    public class ColleagueDiscountRepository:RepositoryBase<long,ColleagueDiscount>, IColleagueDiscountRepository
+    public class ColleagueDiscountRepository : RepositoryBase<long, ColleagueDiscount>, IColleagueDiscountRepository
     {
         private readonly DiscountContext _context;
         private readonly ShopContext _shopContext;
@@ -36,7 +38,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 CreationDate = x.CreationDate.ToFarsi(),
                 DiscountRate = x.DiscountRate,
                 ProductId = x.ProductId,
-                IsRemove=x.IsRemved
+                IsRemoved = x.IsRemved
             });
 
             if (searchModel.ProductId > 0)

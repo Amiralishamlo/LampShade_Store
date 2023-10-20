@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ShopManagement.Domain.SliderAgg;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ShopManagement.Domain.SlideAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Mapping
 {
@@ -23,8 +18,6 @@ namespace ShopManagement.Infrastructure.EFCore.Mapping
             builder.Property(x => x.Title).HasMaxLength(255);
             builder.Property(x => x.Text).HasMaxLength(255);
             builder.Property(x => x.BtnText).HasMaxLength(50).IsRequired();
-            builder.Property(x => x.Link).HasMaxLength(500);
-
         }
     }
 }

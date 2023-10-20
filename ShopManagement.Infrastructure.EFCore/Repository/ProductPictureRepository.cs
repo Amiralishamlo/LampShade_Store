@@ -1,47 +1,54 @@
-﻿using _0_Framework.Application;
-using _0_Framework.Infrastructure;
+﻿using _0_Framework.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Application.Contracts.ProductPictures;
-using ShopManagement.Domain.ProductAgg;
+using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
-    public class ProductPictureRepository: RepositoryBase<long, ProductPicture>, IProductPictureRepository
+    public class ProductPictureRepository : RepositoryBase<long, ProductPicture>, IProductPictureRepository
     {
-        private readonly ShopContext _shopContext;
+        private readonly ShopContext _context;
 
-        public ProductPictureRepository(ShopContext shopContext):base(shopContext) 
+        public ProductPictureRepository(ShopContext context) : base(context)
         {
-            _shopContext = shopContext;
+            _context = context;
         }
 
         public EditProductPicture GetDetails(long id)
         {
-#pragma warning disable CS8603 // Possible null reference return.
-            return _shopContext.ProductPictures.Select(x => new EditProductPicture
-            {
-                Id = x.Id,
-                Picture=x.Picture,
-                PictureAlt=x.PictureAlt,
-                PictureTitle=x.PictureTitle,
-                ProductId=x.ProductId
+            return _context.ProductPictures
+                .Select(x => new EditProductPicture
+                {
+                    Id = x.Id,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    ProductId = x.ProductId
+                }).FirstOrDefault(x => x.Id == id);
+        }
 
-            }).FirstOrDefault(x => x.Id == id);
-#pragma warning restore CS8603 // Possible null reference return.
+        public ProductPicture GetWithProductAndCategory(long id)
+        {
+            return _context.ProductPictures
+                .Include(x => x.Product)
+                .ThenInclude(x => x.Category)
+                .FirstOrDefault(x => x.Id == id);
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)
         {
-            var query = _shopContext.ProductPictures.Include(x=>x.Product).Select(x => new ProductPictureViewModel
-            {
-                Id=x.Id,
-                Picture=x.Picture,
-                CreationDate=x.CreationDate.ToFarsi(),
-                Product=x.Product.Name,
-                ProductId=x.ProductId,
-                IsRemoved=x.IsRemove
-            });
+            var query = _context.ProductPictures
+                .Include(x => x.Product)
+                .Select(x => new ProductPictureViewModel
+                {
+                    Id = x.Id,
+                    Product = x.Product.Name,
+                    CreationDate = x.CreationDate.ToString(),
+                    Picture = x.Picture,
+                    ProductId = x.ProductId,
+                    IsRemoved = x.IsRemoved
+                });
 
             if (searchModel.ProductId != 0)
                 query = query.Where(x => x.ProductId == searchModel.ProductId);

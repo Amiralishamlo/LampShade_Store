@@ -6,8 +6,6 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-#nullable disable
-
 namespace InventoryMangement.Infrastructure.EFCore.Migrations
 {
     [DbContext(typeof(InventoryContext))]
@@ -17,18 +15,16 @@ namespace InventoryMangement.Infrastructure.EFCore.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.11")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+                .HasAnnotation("ProductVersion", "5.0.0-preview.6.20312.4")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("InventoryManagement.Domain.InventoryAgg.Inventory", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
@@ -44,7 +40,7 @@ namespace InventoryMangement.Infrastructure.EFCore.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Inventory", (string)null);
+                    b.ToTable("Inventory");
                 });
 
             modelBuilder.Entity("InventoryManagement.Domain.InventoryAgg.Inventory", b =>
@@ -53,9 +49,8 @@ namespace InventoryMangement.Infrastructure.EFCore.Migrations
                         {
                             b1.Property<long>("Id")
                                 .ValueGeneratedOnAdd()
-                                .HasColumnType("bigint");
-
-                            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b1.Property<long>("Id"));
+                                .HasColumnType("bigint")
+                                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                             b1.Property<long>("Count")
                                 .HasColumnType("bigint");
@@ -64,9 +59,8 @@ namespace InventoryMangement.Infrastructure.EFCore.Migrations
                                 .HasColumnType("bigint");
 
                             b1.Property<string>("Description")
-                                .IsRequired()
-                                .HasMaxLength(1000)
-                                .HasColumnType("nvarchar(1000)");
+                                .HasColumnType("nvarchar(1000)")
+                                .HasMaxLength(1000);
 
                             b1.Property<long>("InventoryId")
                                 .HasColumnType("bigint");
@@ -87,15 +81,11 @@ namespace InventoryMangement.Infrastructure.EFCore.Migrations
 
                             b1.HasIndex("InventoryId");
 
-                            b1.ToTable("InventoryOperations", (string)null);
+                            b1.ToTable("InventoryOperations");
 
                             b1.WithOwner("Inventory")
                                 .HasForeignKey("InventoryId");
-
-                            b1.Navigation("Inventory");
                         });
-
-                    b.Navigation("Operations");
                 });
 #pragma warning restore 612, 618
         }

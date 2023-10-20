@@ -1,11 +1,12 @@
 ﻿@model DiscountManagement.Application.Contract.CustomerDiscount.DefineCustomerDiscount
-@{}
+@{
+}
 
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h4 class="modal-title">تعریف تخفیف مشتری جدید</h4>
 </div>
-<link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet" />
+
 <form asp-page="./Index" asp-page-handler="Create"
       method="post"
       data-ajax="true"
@@ -63,13 +64,3 @@
         <button type="submit" class="btn btn-info waves-effect waves-light">تعریف</button>
     </div>
 </form>
-
-<script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
-<script src="~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
-
-<script>
-    $('.persianDateInput').persianDatepicker({
-        format: 'YYYY/MM/DD',
-        autoClose: true
-    });
-</script>

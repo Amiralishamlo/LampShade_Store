@@ -1,15 +1,19 @@
 ﻿using _0_Framework.Application;
 using _0_Framework.Infrastructure;
-using InventoryManagement.Application.Contract.Inventorys;
+using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using ShopManagement.Infrastructure.EFCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace InventoryMangement.Infrastructure.EFCore.Repository
 {
     public class InventoryRepository : RepositoryBase<long, Inventory>, IInventoryRepository
     {
-        private readonly InventoryContext _inventoryContext;
         private readonly ShopContext _shopContext;
+        private readonly InventoryContext _inventoryContext;
 
         public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext) : base(inventoryContext)
         {

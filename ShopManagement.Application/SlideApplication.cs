@@ -1,69 +1,82 @@
 ﻿using _0_Framework.Application;
-using ShopManagement.Application.Contracts.Slides;
-using ShopManagement.Domain.SliderAgg;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.SlideAgg;
+using System.Collections.Generic;
 
 namespace ShopManagement.Application
 {
-    public class SlideApplication: ISlideApplication
+    public class SlideApplication : ISlideApplication
     {
-        private readonly ISlideRepository _repository;
+        private readonly IFileUploader _fileUploader;
+        private readonly ISlideRepository _slideRepository;
 
-        public SlideApplication(ISlideRepository repository)
+        public SlideApplication(ISlideRepository slideRepository, IFileUploader fileUploader)
         {
-            _repository = repository;
+            _fileUploader = fileUploader;
+            _slideRepository = slideRepository;
         }
 
         public OperationResult Create(CreateSlide command)
         {
-            var opertion = new OperationResult();
-            var slide=new Slide(command.Heading,command.Title,command.Text,command.Picture,command.PictureAlt,command.PictureTitle,command.BtnText,command.Link);
-            _repository.Create(slide);
-            _repository.SaveChanges();
-            return opertion.Succedded();
+            var operation = new OperationResult();
+
+            var pictureName = _fileUploader.Upload(command.Picture, "slides");
+
+            var slide = new Slide(pictureName, command.PictureAlt, command.PictureTitle,
+                command.Heading, command.Title, command.Text, command.Link, command.BtnText);
+
+            _slideRepository.Create(slide);
+            _slideRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public OperationResult Edit(EditSlide command)
         {
-            var opertion = new OperationResult();
-            var slide = _repository.Get(command.Id);
+            var operation = new OperationResult();
+            var slide = _slideRepository.Get(command.Id);
             if (slide == null)
-                return opertion.Failed(ApplicationMessages.RecordNotFound);
-            slide.Edit(command.Heading, command.Title, command.Text, command.Picture, command.PictureAlt, command.PictureTitle, command.BtnText,command.Link);
-            _repository.SaveChanges();
-            return opertion.Succedded();
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+            var pictureName = _fileUploader.Upload(command.Picture, "slides");
+
+            slide.Edit(pictureName, command.PictureAlt, command.PictureTitle,
+                command.Heading, command.Title, command.Text, command.Link, command.BtnText);
+            _slideRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public EditSlide GetDetails(long id)
         {
-            return _repository.GetDetails(id);
+            return _slideRepository.GetDetails(id);
         }
 
         public List<SlideViewModel> GetList()
         {
-            return _repository.GetList();
+            return _slideRepository.GetList();
         }
 
         public OperationResult Remove(long id)
         {
-            var opertion = new OperationResult();
-            var slide = _repository.Get(id);
+            var operation = new OperationResult();
+            var slide = _slideRepository.Get(id);
             if (slide == null)
-                return opertion.Failed(ApplicationMessages.RecordNotFound);
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
             slide.Remove();
-            _repository.SaveChanges();
-            return opertion.Succedded();
+            _slideRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public OperationResult Restore(long id)
         {
-            var opertion = new OperationResult();
-            var slide = _repository.Get(id);
+            var operation = new OperationResult();
+            var slide = _slideRepository.Get(id);
             if (slide == null)
-                return opertion.Failed(ApplicationMessages.RecordNotFound);
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
             slide.Restore();
-            _repository.SaveChanges();
-            return opertion.Succedded();
+            _slideRepository.SaveChanges();
+            return operation.Succedded();
         }
     }
 }

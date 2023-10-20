@@ -2,7 +2,8 @@ using DiscountManagement.Application.Contract.CustomerDiscount;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ShopManagement.Application.Contracts.Products;
+using ShopManagement.Application.Contracts.Product;
+using System.Collections.Generic;
 
 namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
 {
@@ -10,7 +11,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
     {
         [TempData]
         public string Message { get; set; }
-        public SearchCustomerDiscount SearchModel;
+        public CustomerDiscountSearchModel SearchModel;
         public List<CustomerDiscountViewModel> CustomerDiscounts;
         public SelectList Products;
 
@@ -23,7 +24,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
             _customerDiscountApplication = customerDiscountApplication;
         }
 
-        public void OnGet(SearchCustomerDiscount searchModel)
+        public void OnGet(CustomerDiscountSearchModel searchModel)
         {
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
             CustomerDiscounts = _customerDiscountApplication.Search(searchModel);
@@ -51,7 +52,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
             return Partial("Edit", customerDiscount);
         }
 
-        public JsonResult OnPostEdit(EditCustomerDiscount command)
+        public JsonResult OnPostEdit(EditCustoemrDiscount command)
         {
             var result = _customerDiscountApplication.Edit(command);
             return new JsonResult(result);

@@ -3,16 +3,13 @@ using ShopManagement.Domain.ProductAgg;
 
 namespace ShopManagement.Domain.ProductPictureAgg
 {
-    public class ProductPicture:EntityBase
+    public class ProductPicture : EntityBase
     {
-        public long ProductId { get;private set; }
-
-        public string Picture { get;private set; }
-        public string PictureAlt { get;private set; }
-        public string PictureTitle { get;private set; }
-
-        public bool IsRemove { get;private set; }
-
+        public long ProductId { get; private set; }
+        public string Picture { get; private set; }
+        public string PictureAlt { get; private set; }
+        public string PictureTitle { get; private set; }
+        public bool IsRemoved { get; private set; }
         public Product Product { get; private set; }
 
         public ProductPicture(long productId, string picture, string pictureAlt, string pictureTitle)
@@ -21,22 +18,28 @@ namespace ShopManagement.Domain.ProductPictureAgg
             Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
-            IsRemove = false;
+            IsRemoved = false;
         }
+
         public void Edit(long productId, string picture, string pictureAlt, string pictureTitle)
         {
             ProductId = productId;
-            Picture = picture;
+            
+            if (!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
+            
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
         }
-        public void  Remove() 
-        { 
-            IsRemove = true;
+
+        public void Remove()
+        {
+            IsRemoved = true;
         }
+
         public void Restore()
         {
-            IsRemove=false;
+            IsRemoved = false;
         }
     }
 }

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lampshapde Store</title>
 
-    <!-- Vendor CSS -->
     <link href="~/Theme/assets/css/vendors.css" rel="stylesheet">
-    <!-- Main CSS -->
     <link href="~/Theme/assets/css/style.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="~/Theme/assets/css/Custom.css" rel="stylesheet">
+
 </head>
 
 <body>
+
     @await Component.InvokeAsync("Menu")
 
     @RenderBody()
@@ -27,8 +26,8 @@
             <i class="ion-ios-close-empty"></i>
         </a>
         <div class="search-form">
-            <form method="get" asp-page="/Search">
-                <input type="search" name="value" id="value" placeholder="هرچه می خواهید در فروشگاه جستجو کنید ...">
+            <form action="#">
+                <input type="search" placeholder="هرچه می خواهید در فروشگاه جستجو کنید ...">
                 <button type="submit">
                     <i class="ion-android-search"></i>
                 </button>
@@ -36,15 +35,12 @@
         </div>
     </div>
 
-    <!-- scroll to top  -->
-    <div id="scroll-top">
-        <span>برو بالا صفحه</span><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>
-    </div>
-    <!-- end of scroll to top -->
-    <!-- Vendor JS -->
-    <script src="~/Theme/assets/js/vendors.js"></script>
 
-    <!-- Active JS -->
+    <div id="scroll-top">
+        <span>برو بالا</span><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>
+    </div>
+    
+    <script src="~/Theme/assets/js/vendors.js"></script>
     <script src="~/Theme/assets/js/active.js"></script>
 
 </body>

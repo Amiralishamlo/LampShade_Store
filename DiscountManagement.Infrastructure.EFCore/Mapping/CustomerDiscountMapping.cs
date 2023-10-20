@@ -1,6 +1,7 @@
 ﻿using DiscountManagement.Domain.CustomerDiscountAgg;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
 
 namespace DiscountManagement.Infrastructure.EFCore.Mapping
 {

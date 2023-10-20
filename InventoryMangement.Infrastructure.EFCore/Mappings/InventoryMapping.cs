@@ -1,6 +1,6 @@
 ﻿using InventoryManagement.Domain.InventoryAgg;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace InventoryMangement.Infrastructure.EFCore.Mappings
 {

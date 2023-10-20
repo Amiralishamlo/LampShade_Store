@@ -1,10 +1,13 @@
 ﻿using _0_Framework.Domain;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace _0_Framework.Infrastructure
 {
-    public class RepositoryBase<Tkey, T> : IRepository<Tkey, T> where T : class
+    public class RepositoryBase<TKey, T> : IRepository<TKey, T> where T : class
     {
         private readonly DbContext _context;
 
@@ -15,7 +18,7 @@ namespace _0_Framework.Infrastructure
 
         public void Create(T entity)
         {
-            _context.Add(entity); 
+            _context.Add(entity);
         }
 
         public bool Exists(Expression<Func<T, bool>> expression)
@@ -23,7 +26,7 @@ namespace _0_Framework.Infrastructure
             return _context.Set<T>().Any(expression);
         }
 
-        public T Get(Tkey id)
+        public T Get(TKey id)
         {
             return _context.Find<T>(id);
         }

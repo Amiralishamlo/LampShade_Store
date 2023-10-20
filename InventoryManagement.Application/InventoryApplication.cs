@@ -1,6 +1,9 @@
 ﻿using _0_Framework.Application;
-using InventoryManagement.Application.Contract.Inventorys;
+using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using System;
+using System.Collections.Generic;
+
 namespace InventoryManagement.Application
 {
     public class InventoryApplication : IInventoryApplication
@@ -14,16 +17,14 @@ namespace InventoryManagement.Application
 
         public OperationResult Create(CreateInventory command)
         {
-            var opertion = new OperationResult();
-
+            var operation = new OperationResult();
             if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId))
-                return opertion.Failed(ApplicationMessages.DuplicatedRecord);
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
-            var inventory = new Inventory(command.ProductId,command.UnitPrice);
+            var inventory = new Inventory(command.ProductId, command.UnitPrice);
             _inventoryRepository.Create(inventory);
             _inventoryRepository.SaveChanges();
-            return opertion.Succedded();
-
+            return operation.Succedded();
         }
 
         public OperationResult Edit(EditInventory command)
@@ -43,7 +44,7 @@ namespace InventoryManagement.Application
 
         public EditInventory GetDetails(long id)
         {
-           return _inventoryRepository.GetDetails(id);
+            return _inventoryRepository.GetDetails(id);
         }
 
         public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
