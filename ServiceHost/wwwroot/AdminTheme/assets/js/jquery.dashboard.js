@@ -9,8 +9,8 @@
     "use strict";
 
     var Dashboard = function() {
-        this.$body = $("body")
-        this.$realData = []
+        this.$body = $("body");
+        this.$realData = [];
     };
 
     //creates plot graph

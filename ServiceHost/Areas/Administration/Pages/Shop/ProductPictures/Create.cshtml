@@ -18,7 +18,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="ProductId" class="control-label">محصول</label>
-                    <select class="form-control" asp-for="ProductId" 
+                    <select class="form-control" asp-for="ProductId"
                             asp-items='new SelectList(Model.Products, "Id", "Name")'>
                         <option value="0">محصول</option>
                     </select>
@@ -30,7 +30,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Picture" class="control-label">عکس</label>
-                    <input type="file" class="form-control" asp-for="Picture" accept="image/*"> 
+                    <input type="file" class="form-control" asp-for="Picture" accept="image/*">
                     <span asp-validation-for="Picture" class="error"></span>
                 </div>
             </div>

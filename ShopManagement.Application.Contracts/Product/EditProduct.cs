@@ -1,7 +1,6 @@
-﻿namespace ShopManagement.Application.Contracts.Product
+﻿namespace ShopManagement.Application.Contracts.Product;
+
+public class EditProduct : CreateProduct
 {
-    public class EditProduct : CreateProduct
-    {
-        public long Id { get; set; }
-    }
+    public long Id { get; set; }
 }

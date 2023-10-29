@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ServiceHost.ViewComponents
+namespace ServiceHost.ViewComponents;
+
+public class FooterViewComponent : ViewComponent
 {
-    public class FooterViewComponent : ViewComponent
+    public IViewComponentResult Invoke()
     {
-        public IViewComponentResult Invoke()
-        {
-            return View();
-        }
+        return View();
     }
 }

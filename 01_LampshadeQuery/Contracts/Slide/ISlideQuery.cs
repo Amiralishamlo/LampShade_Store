@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace _01_LampshadeQuery.Contracts.Slide
+namespace _01_LampshadeQuery.Contracts.Slide;
+
+public interface ISlideQuery
 {
-    public interface ISlideQuery
-    {
-        List<SlideQueryModel> GetSlides();
-    }
+    List<SlideQueryModel> GetSlides();
 }

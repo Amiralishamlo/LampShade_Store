@@ -1,34 +1,33 @@
 ﻿using _0_Framework.Domain;
 
-namespace DiscountManagement.Domain.ColleagueDiscountAgg
+namespace DiscountManagement.Domain.ColleagueDiscountAgg;
+
+public class ColleagueDiscount : EntityBase
 {
-    public class ColleagueDiscount : EntityBase
+    public ColleagueDiscount(long productId, int discountRate)
     {
-        public long ProductId { get; private set; }
-        public int DiscountRate { get; private set; }
-        public bool IsRemved { get; private set; }
+        ProductId = productId;
+        DiscountRate = discountRate;
+        IsRemved = false;
+    }
 
-        public ColleagueDiscount(long productId, int discountRate)
-        {
-            ProductId = productId;
-            DiscountRate = discountRate;
-            IsRemved = false;
-        }
+    public long ProductId { get; private set; }
+    public int DiscountRate { get; private set; }
+    public bool IsRemved { get; private set; }
 
-        public void Edit(long productId, int discountRate)
-        {
-            ProductId = productId;
-            DiscountRate = discountRate;
-        }
+    public void Edit(long productId, int discountRate)
+    {
+        ProductId = productId;
+        DiscountRate = discountRate;
+    }
 
-        public void Remove()
-        {
-            IsRemved = true;
-        }
+    public void Remove()
+    {
+        IsRemved = true;
+    }
 
-        public void Restore()
-        {
-            IsRemved = false;
-        }
+    public void Restore()
+    {
+        IsRemved = false;
     }
 }

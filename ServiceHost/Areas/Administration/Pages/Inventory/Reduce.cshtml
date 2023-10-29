@@ -18,7 +18,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Count" class="control-label">انتخاب محصول</label>
-                    <input class="form-control" asp-for="Count" />
+                    <input class="form-control" asp-for="Count"/>
                     <span asp-validation-for="Count" class="error"></span>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <input type="hidden" asp-for="InventoryId" value="@Model.InventoryId" />
+        <input type="hidden" asp-for="InventoryId" value="@Model.InventoryId"/>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>

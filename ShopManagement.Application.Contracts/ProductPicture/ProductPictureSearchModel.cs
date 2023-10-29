@@ -1,7 +1,6 @@
-﻿namespace ShopManagement.Application.Contracts.ProductPicture
+﻿namespace ShopManagement.Application.Contracts.ProductPicture;
+
+public class ProductPictureSearchModel
 {
-    public class ProductPictureSearchModel
-    {
-        public long ProductId { get; set; }
-    }
+    public long ProductId { get; set; }
 }

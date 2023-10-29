@@ -1,0 +1,3 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/ServiceHost" Path="C:\Hossein\Packages\.NetCoreMvcApi\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\wwwroot\" />
+</StaticWebAssets>

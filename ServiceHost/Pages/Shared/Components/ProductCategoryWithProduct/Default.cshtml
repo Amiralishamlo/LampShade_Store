@@ -20,7 +20,9 @@
                             @foreach (var category in Model)
                             {
                                 <a class="nav-item nav-link @(Model.First() == category ? "active" : "")" id="product-tab-@category.Id" data-toggle="tab"
-                                   href="#product-series-@category.Id" role="tab" aria-selected="true">@category.Name</a>
+                                   href="#product-series-@category.Id" role="tab" aria-selected="true">
+                                    @category.Name
+                                </a>
                             }
                         </div>
                     </div>
@@ -68,7 +70,7 @@
                                                     <div class="single-grid-product__content">
                                                         <div class="single-grid-product__category-rating">
                                                             <span class="category">
-                                                                <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
+                                                                <a asp-page="/ProductCategory" asp-route-id="@category.Slug">@product.Category</a>
                                                             </span>
                                                             <span class="rating">
                                                                 <i class="ion-android-star active"></i>

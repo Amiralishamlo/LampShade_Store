@@ -1,86 +1,54 @@
 /*used for inbox compose, reply forms*/
 .inbox-editor {
-  padding: 10px;
-  margin: 0 !important;
+    margin: 0 !important;
+    padding: 10px;
 }
 
 /*used for inbox reply form, for the message blockquote on reply*/
+
 blockquote {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  border-left: 1px solid #666 !important;
-  padding-left: 5px;
-  display: block;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
+    border-left: 1px solid #666 !important;
+    display: block;
+    filter: alpha(opacity=70);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    opacity: 0.7;
+    padding-left: 5px;
 }
 
 /* used by the wysiwyg*/
-.wysiwyg-color-black {
-  color: black;
-}
 
-.wysiwyg-color-silver {
-  color: silver;
-}
+.wysiwyg-color-black { color: black; }
 
-.wysiwyg-color-gray {
-  color: gray;
-}
+.wysiwyg-color-silver { color: silver; }
 
-.wysiwyg-color-white {
-  color: white;
-}
+.wysiwyg-color-gray { color: gray; }
 
-.wysiwyg-color-maroon {
-  color: maroon;
-}
+.wysiwyg-color-white { color: white; }
 
-.wysiwyg-color-red {
-  color: red;
-}
+.wysiwyg-color-maroon { color: maroon; }
 
-.wysiwyg-color-purple {
-  color: purple;
-}
+.wysiwyg-color-red { color: red; }
 
-.wysiwyg-color-fuchsia {
-  color: fuchsia;
-}
+.wysiwyg-color-purple { color: purple; }
 
-.wysiwyg-color-green {
-  color: green;
-}
+.wysiwyg-color-fuchsia { color: fuchsia; }
 
-.wysiwyg-color-lime {
-  color: lime;
-}
+.wysiwyg-color-green { color: green; }
 
-.wysiwyg-color-olive {
-  color: olive;
-}
+.wysiwyg-color-lime { color: lime; }
 
-.wysiwyg-color-yellow {
-  color: yellow;
-}
+.wysiwyg-color-olive { color: olive; }
 
-.wysiwyg-color-navy {
-  color: navy;
-}
+.wysiwyg-color-yellow { color: yellow; }
 
-.wysiwyg-color-blue {
-  color: blue;
-}
+.wysiwyg-color-navy { color: navy; }
 
-.wysiwyg-color-teal {
-  color: teal;
-}
+.wysiwyg-color-blue { color: blue; }
 
-.wysiwyg-color-aqua {
-  color: aqua;
-}
+.wysiwyg-color-teal { color: teal; }
 
-.wysiwyg-color-orange {
-  color: orange;
-}
+.wysiwyg-color-aqua { color: aqua; }
+
+.wysiwyg-color-orange { color: orange; }

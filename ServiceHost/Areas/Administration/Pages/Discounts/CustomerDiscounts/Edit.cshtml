@@ -53,12 +53,12 @@
                 <div class="form-group no-margin">
                     <label asp-for="Reason" class="control-label">علت تخفیف</label>
                     <textarea class="form-control autogrow" asp-for="Reason"
-                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                              style="height: 104px; overflow: hidden; resize: horizontal; word-wrap: break-word;"></textarea>
                     <span asp-validation-for="Reason" class="error"></span>
                 </div>
             </div>
         </div>
-        <input type="hidden" asp-for="Id" value="@Model.Id" />
+        <input type="hidden" asp-for="Id" value="@Model.Id"/>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>

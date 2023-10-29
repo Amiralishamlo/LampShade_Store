@@ -1,7 +1,6 @@
-﻿namespace ShopManagement.Application.Contracts.ProductPicture
+﻿namespace ShopManagement.Application.Contracts.ProductPicture;
+
+public class EditProductPicture : CreateProductPicture
 {
-    public class EditProductPicture : CreateProductPicture
-    {
-        public long Id { get; set; }
-    }
+    public long Id { get; set; }
 }

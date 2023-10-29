@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bff3c6fb-83de-4f75-b8b4-10bbee5a9399": {
+      "ProjectGuid": "bff3c6fb-83de-4f75-b8b4-10bbee5a9399",
+      "DisplayName": "ServiceHost",
+      "ColorIndex": 0
+    },
+    "ab72def3-b594-472e-bedf-f5357957a44a": {
+      "ProjectGuid": "ab72def3-b594-472e-bedf-f5357957a44a",
+      "DisplayName": "0_Framework",
+      "ColorIndex": 1
+    },
+    "2ca75b64-b411-4013-a402-8b5d05122ba1": {
+      "ProjectGuid": "2ca75b64-b411-4013-a402-8b5d05122ba1",
+      "DisplayName": "AccountManagement.Application.Contracts",
+      "ColorIndex": 2
+    },
+    "5aa1d39f-36ac-4e03-9d82-2bdc725f272a": {
+      "ProjectGuid": "5aa1d39f-36ac-4e03-9d82-2bdc725f272a",
+      "DisplayName": "AccountManagement.Domain",
+      "ColorIndex": 3
+    },
+    "b365effd-7053-4f52-9f40-90bc722f9082": {
+      "ProjectGuid": "b365effd-7053-4f52-9f40-90bc722f9082",
+      "DisplayName": "AccountMangement.Infrastructure.EFCore",
+      "ColorIndex": 4
+    },
+    "06f5cfe1-68b5-44a0-b479-1117e2149722": {
+      "ProjectGuid": "06f5cfe1-68b5-44a0-b479-1117e2149722",
+      "DisplayName": "AccountManagement.Application",
+      "ColorIndex": 5
+    },
+    "075c7037-642f-4022-9363-92d9ddef8f9f": {
+      "ProjectGuid": "075c7037-642f-4022-9363-92d9ddef8f9f",
+      "DisplayName": "InventoryManagement.Infrastructure.Configuration",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}
