@@ -4,7 +4,7 @@ Furniture and decoration store .
 
 Items used in the project : asp .net core 8 + Onion Arch + SqlServer + Identity
 
-Project Title : Market Place
+Project Title : Market Places .
 
 #
 
